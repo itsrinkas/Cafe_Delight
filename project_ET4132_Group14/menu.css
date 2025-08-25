@@ -1,0 +1,195 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: beige;
+  text-align: center;
+  
+}
+
+ .top_banner {
+  background-color: #3C211C;
+  width: 100%;
+  height: 300px;
+  padding-top: 90px;
+  color: white;
+  font-family: Courier;
+  text-align: center;
+  font-size: 36pt;
+}
+
+.logo-img img {
+  width: 100px;  /* Set width */
+  height: 100px; /* Set height (same as width for a perfect circle) */
+  border-radius: 50%; /* Makes the image round */
+  display: block;
+  margin: 20px auto; /* Center the image with vertical margin */
+}
+
+.navbar {
+  background-color: #3e2a26; 
+  text-align: center; 
+  padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none; 
+  color: #d2bba4; 
+  font-size: 26px;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  color: #fff; 
+}
+h1 {
+  margin: 0;
+  padding-top: 5px;
+  font-family: 'Grenze', serif;
+  color: #FFF3EF;
+  font-family: tahoma;
+  font-size: 75px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 36px;
+  color: #694747;
+  font-family: tahoma;
+  
+}
+
+hr {
+  border: none;
+  height: 0.2px;
+  background-color: #3e2a26;
+  width: 72%;
+  margin: 20px auto;
+}
+
+/* Grid menu for items */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  margin-bottom: 60px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.menu-item {
+  background-color: #F6F0EA;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 240px;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+  border-radius: 5%;
+}
+
+.menu-item p {
+  margin: 8px 0;
+  font-size: 20px;
+  color: #3e2a26;
+  font-weight: bold;
+  font-family: tahoma;
+}
+
+.menu-item p:last-child {
+  font-weight: bold;
+  color: #555;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design - For medium-sized screens (tablets), 2 items per row */
+@media (max-width: 900px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive design - For small screens (phones), 1 item per row */
+@media (max-width: 600px) {
+  .menu-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  background-color: #3C211C; 
+  height: 300px;
+  color: white; 
+  clear: both; 
+  font-family: Tahoma;
+  font-size: 16pt;
+}
+
+.footimg img {
+  width: 100px;  /* Set width */
+  height: 100px; /* Set height (same as width for a perfect circle) */
+  border-radius: 50%; /* Makes the image round */
+  display: block;
+  margin: 0 auto; /* Center the image */
+  float: left;
+  padding: 50px;
+}
+
+.info-table {
+  width: 300px; /* Makes the table take full width */
+  border-collapse: collapse; /* Combines borders of adjacent cells */
+  color: white;
+  float: right;
+  margin: 20px 0; /* Adds some space above and below the table */
+}
+
+th, td { /* Styles for table header and data cells */
+  padding: 15px; /* More padding for better spacing */
+  text-align: left; /* Aligns text to the left */
+}
+
+.foot-nav {
+  width: 200px; 
+  color: #FFFFFF; 
+}
+
+.foot-nav a {
+  text-decoration: none; /* Removes underlines */
+  color: #FFFFFF; /* Sets link color to white */
+  display: block; /* Makes the entire cell clickable */
+  padding: 5px; /* Adds padding around the links */
+}
+
+.foot-nav a:hover {
+  background-color: #e0e0e0; /* Light gray on hover */
+  color: #000000; /* Black text on hover */
+}
+
+/* Button styling for menu header */
+button {
+  background-color: #3e2a26; /* Dark brown background */
+  color: white; /* Light beige text color to match theme */
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-family: Tahoma;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s;
+  margin: 0 10px; /* Space between buttons */
+}

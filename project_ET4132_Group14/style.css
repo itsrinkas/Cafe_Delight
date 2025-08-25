@@ -1,0 +1,301 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+}
+.top_banner {
+  background-color: #3C211C;
+  width: 100%;
+  height: 300px;
+  padding-top: 90px;
+  color: white;
+  font-family: Courier;
+  text-align: center;
+  font-size: 36pt;
+}
+
+.logo-img img {
+  width: 100px;  /* Set width */
+  height: 100px; /* Set height (same as width for a perfect circle) */
+  border-radius: 50%; /* Makes the image round */
+  display: block;
+  margin: 20px auto; /* Center the image with vertical margin */
+}
+
+.navbar {
+  background-color: #3e2a26; 
+  text-align: center; 
+  padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none; 
+  color: #d2bba4; 
+  font-size: 26px;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  color: #fff; 
+}
+
+.candid {
+  background-image: url('images/cafe.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px; 
+}
+
+.main {
+  color: #3C211C;
+  font-family: Tahoma; 
+  padding: 100px;
+  height: 500px;
+  background-color: beige;
+}
+
+.maintext {
+  width: 500px;
+  float: left;
+}
+
+.mainimg {
+  padding: 20px; 
+  display: block;    
+  margin: 0 auto; 
+  float: right;
+}
+
+.footer {
+  background-color: #3C211C; 
+  height: 300px;
+  color: white; 
+  clear: both; 
+  font-family: Tahoma;
+  font-size: 16pt;
+}
+
+.footimg img {
+  width: 100px;  /* Set width */
+  height: 100px; /* Set height (same as width for a perfect circle) */
+  border-radius: 50%; /* Makes the image round */
+  display: block;
+  margin: 0 auto; /* Center the image */
+  float: left;
+  padding: 50px;
+}
+
+.info-table {
+  width: 300px; /* Makes the table take full width */
+  border-collapse: collapse; /* Combines borders of adjacent cells */
+  color: white;
+  float: right;
+  margin: 20px 0; /* Adds some space above and below the table */
+}
+
+th, td { /* Styles for table header and data cells */
+  padding: 15px; /* More padding for better spacing */
+  text-align: left; /* Aligns text to the left */
+}
+
+.foot-nav {
+  width: 200px; 
+  color: #FFFFFF; 
+}
+
+.foot-nav a {
+  text-decoration: none; /* Removes underlines */
+  color: #FFFFFF; /* Sets link color to white */
+  display: block; /* Makes the entire cell clickable */
+  padding: 5px; /* Adds padding around the links */
+}
+
+.foot-nav a:hover {
+  background-color: #e0e0e0; /* Light gray on hover */
+  color: #000000; /* Black text on hover */
+}
+
+form {
+    color: white;
+    font-family: Tahoma, sans-serif;
+    background-color: #3C211C;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* Limit form width */
+    float: left;
+    max-height: 1000px;
+	font-size:20px;
+	
+}
+
+form input, form textarea {
+    width: 100%; /* Make the inputs take full width */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn’t increase overall width */
+	font-size:20px;
+}
+
+form input[type="submit"], form input[type="reset"] {
+    width: auto; /* Make buttons auto width */
+    padding: 10px 20px;
+    background-color: beige; /* Button background */
+    color: 3C211C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Space between buttons */
+	font-size:20px;
+}
+
+
+
+.map {
+  float: right;
+  width: 600px; /* Ensure a fixed width for consistency */
+  height: 450px; /* Match height to the iframe */
+  border: 2px solid #3C211C;
+  border-radius: 10px;
+}
+
+.menu {
+  color: #3C211C;
+  font-family: Tahoma, sans-serif;
+  padding: 100px;
+  background-color: beige;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  gap: 20px; /* Adds space between grid items */
+  justify-items: center; /* Centers the items horizontally */
+}
+
+/* Menu Section */
+.menu {
+  color: #3C211C;
+  font-family: Tahoma, sans-serif;
+  padding: 50px;
+  background-color: beige;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px; /* Space between grid items */
+
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 items per row */
+  gap: 20px; /* space between the grid items */
+  float: left;
+}
+
+.menu-item {
+  border: 2px solid #3C211C;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-item:hover{
+	background-color: #3C211C;
+	color: white;
+	
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+
+.menu-item p {
+  margin: 10px 0 0 0; /* Adds space between text elements */
+}
+
+.menu-header{
+    color: #3C211C;
+  font-family: Tahoma, sans-serif;
+  padding-bottom: 5px;
+  padding-left: 90px;
+  padding-top: 20px;
+  background-color: beige;
+}
+
+.menu-adjacent{
+
+  float: right;
+
+}
+
+.menu-adjacent img{
+
+  width: 300px;
+  padding-left: 300px;
+
+
+}
+.about{
+	background-color: beige;
+	color: #3C211C;
+  font-family: Tahoma, sans-serif;
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 100px;
+      margin-top: 100px; 
+}
+
+.about button{
+	width: auto; /* Make buttons auto width */
+    padding: 10px 20px;
+    background-color: #3C211C; /* Button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Space between buttons */
+}
+
+.about button:hover {
+	background-color: #5a352e;
+	
+}
+
+.sub{
+	text-align: center;
+}
+
+.sub-button{
+	
+	width: auto; /* Make buttons auto width */
+    padding: 10px 20px;
+    background-color: #3C211C; /* Button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Space between buttons */
+}
+select {
+    width: 100%;  /* Increase the width of the dropdown */
+    font-size: 18px;  /* Make the font size bigger */
+    padding: 10px;  /* Add padding inside the dropdown */
+    border-radius: 5px;  /* Optional: Round the corners */
+    border: 1px solid #ccc;  /* Optional: Add a border around the select */
+}
+
+select option {
+    font-size: 18px;  /* Increase font size for options */
+    padding: 10px;  /* Add padding inside each option */
+}
+
+.buffer{
+	
+	height: 200px
+	;
+	background-color: beige;
+}
