@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-ie">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact Us</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/logo.jpg">
+</head>
+
+<body>
+
+    <!-- First Section of Page -->
+    <section class="top_banner">
+        Cafe Delight
+        <br />
+        <div class="logo-img">
+            <img src="images/logo.jpg" width="100px" alt="logo">
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="index.php">Home</a>
+            <a href="drinks.php">Drinks</a>
+            <a href="desserts.php">Desserts</a>
+            <a href="contact.html">Contact Us</a>
+            
+        </div>
+    </section>
+    <section class="main">
+        <!--Form-->
+        
+
+            <h1>Contact Us</h1>
+            <p>Please enter your contact details for any enquiries</p>
+            <hr />
+
+            <form action="mailto:admin@gmail.com" method="post">
+
+                <label for="name"><b>Name:</b></label><br>
+                <input type="text" id="name" name="Name" tabindex="1" required>
+                <br><br>
+
+                <label for="email"><b>Email:</b></label><br>
+                <input type="email" id="email" name="email" tabindex="2" required>
+                <br><br>
+
+                <label for="phone"><b>Phone:</b></label><br>
+                <input type="tel" id="phone" name="phoneno" tabindex="3">
+                <br><br>
+
+                <label for="message"><b>Enquiry:</b></label><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here..."
+                    required></textarea>
+                <br><br>
+
+                <input type="submit" name="submit" value="Send" tabindex="4">
+                <input type="reset" name="reset" value="Clear" tabindex="5">
+
+            </form>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19359.435851351544!2d-8.56565165!3d52.661251299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1729718775929!5m2!1sen!2sie"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+					
+					
+            </div>
+    </section>
+	
+	
+	<section class="about">
+	
+           
+                <h2>Opening Hours</h2>
+                <p>Monday to Saturday<span style="display:inline-block; width: 30px;"></span>7am – 6pm</p>
+                <p>Sunday<span style="display:inline-block; width: 119px;"></span>10am – 5pm</p>
+            
+           
+            <h2>Address & Contact Details</h2>
+            <p>William Street,</br>
+            Limerick,</br>
+            V94 RDR7</p>
+                
+                <button class="contact-button" onclick="window.location.href='tel:+353872729282'">+353 87 272 9282</button>
+                <button class="email-button" onclick="window.location.href='mailto:info@cafedelight.com'">info@cafedelight.com</button>
+
+         
+	
+	</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footimg">
+            <img src="images/logo.jpg" width="100px" alt="logo">
+        </div>
+
+        <table class="info-table">
+            <tr>
+                <td>&#9660; Limerick City</td>
+            </tr>
+           
+            <tr>
+                <td>📞 +353 87 272 2828</td>
+            </tr>
+            <tr>
+                <td>✉️ info@cafedelight.com</td>
+            </tr>
+        </table>
+
+        <table class="foot-nav">
+            <tr>
+                <td><a href="index.php">Home</a></td>
+            </tr>
+            <tr>
+                <td><a href="drinks.php">Drinks Menu</a></td>
+            </tr>
+            <tr>
+                <td><a href="desserts.php">Desserts Menu</a></td>
+            </tr>
+            <tr>
+                <td><a href="contact.html">Contact Us</a></td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+
+</html>

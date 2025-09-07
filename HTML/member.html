@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-ie">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Member Info</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <!-- First Section of Page -->
+  <section class="top_banner">
+    Cafe Delight
+    <br />
+    <div class="logo-img">
+      <img src="images/logo.jpg" width="100px">
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="drinks.html">Drinks</a>
+      <a href="desserts.html">Desserts</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Main Section with Form -->
+  <section class="main">
+    <h2>Member Information Form</h2>
+    <form action="submit_member_info.php" method="POST">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="email_address">Email Address:</label><br>
+        <input type="email" id="email_address" name="email_address"><br><br>
+
+        <label for="is_student">Are you a student?</label><br>
+        <input type="radio" id="is_student_yes" name="is_student" value="1" required> Yes<br>
+        <input type="radio" id="is_student_no" name="is_student" value="0"> No<br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="footimg">
+          <img src="images/logo.jpg" width="100px">
+      </div>
+
+      <table class="info-table">
+          <tr>
+              <td>&#9660; Limerick City</td>
+          </tr>
+          <tr>
+              <td>📞 +353 87 272 2828</td>
+          </tr>
+          <tr>
+              <td>✉️ info@cafedelight.com</td>
+          </tr>
+      </table>
+
+      <table class="foot-nav">
+          <tr>
+              <td><a href="index.html">Home</a></td>
+          </tr>
+          <tr>
+              <td><a href="drinks.html">Drinks Menu</a></td>
+          </tr>
+          <tr>
+              <td><a href="desserts.html">Desserts Menu</a></td>
+          </tr>
+          <tr>
+              <td><a href="contact.html">Contact Us</a></td>
+          </tr>
+      </table>
+  </footer>
+
+</body>
+</html>

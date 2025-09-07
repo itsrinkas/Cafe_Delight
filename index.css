@@ -1,0 +1,484 @@
+
+
+
+
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: beige;
+    text-align: center;
+	font-family: tahoma;
+  }
+  
+
+  .top_banner {
+  background-color: #3C211C;
+  width: 100%;
+  height: 300px;
+  padding-top: 90px;
+  color: white;
+  font-family: Courier;
+  text-align: center;
+  font-size: 36pt;
+}
+
+.logo-img img {
+  width: 100px;  /* Set width */
+  height: 100px; /* Set height (same as width for a perfect circle) */
+  border-radius: 50%; /* Makes the image round */
+  display: block;
+  margin: 20px auto; /* Center the image with vertical margin */
+}
+
+.navbar {
+  background-color: #3e2a26; 
+  text-align: center; 
+  padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none; 
+  color: #d2bba4; 
+  font-size: 26px;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  color: #fff; 
+}
+  
+  
+  
+  /* Main Section Styling */
+  .main {
+    padding: 10%;
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;  
+  }
+  .main h2 {
+    font-size: 40px;
+    letter-spacing: 0.2ch;
+    color: #5a352e;
+  }
+  .main p{
+    font-size: 20px;
+    color: #3e2a26;
+    padding-top: 10%;
+  }
+
+  
+  .main::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.special-deals {
+  background-color: #5a352e; 
+  padding: 5%; /* Reduce padding slightly for better fit */
+  margin: 0 auto; /* Center the section horizontally */
+  width: 80%; /* Adjust width to make it centered and proportional */
+  text-align: center;
+  border-radius: 20px;
+  display: flex; /* Use Flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for effect */
+}
+
+.special-deals h2 {
+  float: center;
+  font-size: 46px;
+  letter-spacing: 0.2ch;
+  color: beige; 
+  margin: -5% 0 10% 0;
+}
+
+
+/* Deals Container */
+.deals-container {
+  display: flex;
+  gap: 20px; 
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+}
+
+/* Individual Deal Item */
+.deal-item {
+  background-color: #F6F0EA; 
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  width: calc(33.33% - 20px); 
+  box-sizing: border-box;
+}
+
+/* Deal Image */
+.deal-img {
+  width: 100%; 
+  height: 200px;
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+/* Deal Description */
+.deal-item p {
+  font-size: 18px;
+  color: #3e2a26; 
+  margin-top: 15px;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+  .deal-item {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .deal-item {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+}
+form {
+	text-align: center;
+    color: white;
+    font-family: Tahoma, sans-serif;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px; /* Limit form width */
+    float: left;
+   
+}
+
+form input, form textarea {
+    width: 100%; /* Make the inputs take full width */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn’t increase overall width */
+}
+
+form input[type="submit"], form input[type="reset"] {
+    width: auto; /* Make buttons auto width */
+    padding: 10px 20px;
+    background-color: #3C211C; /* Button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Space between buttons */
+}
+
+form input[type="submit"]:hover, form input[type="reset"]:hover {
+    background-color: #5a352e; /* Darken button on hover */
+}
+
+
+
+
+  .footer {
+  background-color: #3C211C; 
+  height: 300px;
+  color: white; 
+  clear: both; 
+  font-family: Tahoma;
+  font-size: 16pt;
+}
+
+.footimg img {
+  width: 100px;  /* Set width */
+  height: 100px; /* Set height (same as width for a perfect circle) */
+  border-radius: 50%; /* Makes the image round */
+  display: block;
+  margin: 0 auto; /* Center the image */
+  float: left;
+  padding: 50px;
+}
+
+.info-table {
+  width: 300px; /* Makes the table take full width */
+  border-collapse: collapse; /* Combines borders of adjacent cells */
+  color: white;
+  float: right;
+  margin: 20px 0; /* Adds some space above and below the table */
+}
+
+th, td { /* Styles for table header and data cells */
+  padding: 15px; /* More padding for better spacing */
+  text-align: left; /* Aligns text to the left */
+}
+
+.foot-nav {
+  width: 200px; 
+  color: #FFFFFF; 
+}
+
+.foot-nav a {
+  text-decoration: none; /* Removes underlines */
+  color: #FFFFFF; /* Sets link color to white */
+  display: block; /* Makes the entire cell clickable */
+  padding: 5px; /* Adds padding around the links */
+}
+
+.foot-nav a:hover {
+  background-color: #e0e0e0; /* Light gray on hover */
+  color: #000000; /* Black text on hover */
+}
+
+.review-slider{
+	float: right;
+    max-height: 500px; /* Adjust height as needed */
+    overflow-y: auto;  /* Adds vertical scrollbar */
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: adds a border around the review container */
+    margin-top: 20px;
+
+
+}
+.review-sector {
+    padding: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    height: 900px;
+    text-align: center; /* Ensures text inside items is centered */
+}
+
+/* Review Form Container */
+.reviews form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #3e2a26; /* Matches navbar color */
+  border-radius: 8px;
+  background-color: beige; /* Beige background to match overall theme */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Tahoma, sans-serif;
+  float: left;
+}
+
+/* Input and Textarea Styling */
+.reviews form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #3e2a26; /* Dark brown */
+  
+}
+
+.reviews form input[type="text"],
+.reviews form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+}
+
+.reviews form input[type="text"]:focus,
+.reviews form textarea:focus {
+  border-color: #a67d4d; /* Lighter coffee color for focus */
+  outline: none;
+}
+
+/* Button Styling */
+.reviews-button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3e2a26; /* Dark brown color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reviews form button[type="submit"]:hover {
+  background-color: #8b5e36; /* Darker shade on hover */
+}
+
+/* Message Styling */
+.reviews p {
+ 
+  font-size: 16px;
+  color: #3e2a26;
+  margin-top: 10px;
+}
+
+.reviews p.error {
+  color: #f44336; /* Red for error message */
+}
+
+  /* About Us Text */
+  .about-us {
+    width: 500px;
+    float: left;
+  }
+  
+  /* About Us Image */
+  .about-us-img {
+    width: 500px;
+    float: right;
+  }
+  .about-us h2{
+    text-align: left;
+  }
+  .about-us  p{
+    text-align: left;
+  }
+
+  /* History Image */
+  .history-img {
+    width: 500px;
+    float: left;
+  }
+  
+  /* History Text */
+  .history {
+    width: 500px;
+    float: right;
+    margin-top: 20px;
+  }
+  .history h2{
+    text-align: right;
+  }
+  .history  p{
+    text-align: right;
+  }
+  
+  .member-club {
+    width: 45%;
+    float: left;
+    margin: 20px;
+}
+
+.member-club h2 {
+  text-align: left;
+}
+
+.member-club p {
+    text-align: left;
+  }
+
+.form-button-container {
+    text-align: left;
+    margin: 30px 0;
+}
+
+.member-button {
+    background-color: #3e2a26;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.member-button:hover {
+    background-color: #5a352e;
+}
+
+.member-club-img {
+    width: 45%;
+    float: right;
+    margin: 20px;
+}
+
+.member-club-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+  .main::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* Slider Container */
+.review-slider-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    width: 100%; /* Adjust as needed */
+    position: relative;
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Reviews Wrapper */
+.review-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: calc(100% - 50px); /* Leaves space for arrows */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Hide Scrollbar */
+.review-slider::-webkit-scrollbar {
+    display: none;
+}
+.review-slider {
+    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Individual Review Cards */
+.review-card {
+    flex: 0 0 300px; /* Card width */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #5a352e;
+	color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Card Heading */
+.review-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Card Text */
+.review-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: white;
+}
